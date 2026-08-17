@@ -1,0 +1,21 @@
+{
+  "name": "ob-tunes",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB \"node backend/server.mjs\" \"vite\"",
+    "build": "vite build",
+    "start": "node backend/server.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.2.1",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^6.4.2"
+  },
+  "engines": { "node": ">=20" }
+}
